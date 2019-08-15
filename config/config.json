@@ -1,1 +1,11 @@
-{}
+{
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "wprig.lndo.site",
+      "https": true,
+      "keyPath": "../BrowserSync/wp-rig-browser-sync-key.key",
+      "certPath": "../BrowserSync/wp-rig-browser-sync-cert.crt"
+    }
+  }
+}
