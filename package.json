@@ -122,6 +122,7 @@
     "lint:gulp:fix": "eslint --fix gulp/"
   },
   "dependencies": {
-    "bourbon": "^6.0.0"
+    "bourbon": "^6.0.0",
+    "bourbon-bitters": "^1.2.1"
   }
 }
