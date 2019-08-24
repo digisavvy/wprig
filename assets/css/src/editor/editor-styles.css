@@ -19,6 +19,7 @@
 # Imports
 --------------------------------------------------------------*/
 
+@import "../../../../../../mu-plugins/custom-functionality/blocks/assets/css/custom-blocks.css";
 @import "../_custom-properties.css";
 @import "../_typography.css";
 @import "../_elements.css";
@@ -29,6 +30,18 @@
 /*--------------------------------------------------------------
 # Adjustments for the editor
 --------------------------------------------------------------*/
+.iris-picker .iris-strip {
+	margin-right: 0;
+	position: absolute;
+	right: 10px;
+	height: 183px !important;
+}
+
+/* .components-icon-button svg {
+    fill: #000;
+    outline: none;
+} */
+
 button,
 select,
 option {
