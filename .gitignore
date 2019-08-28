@@ -1,6 +1,7 @@
 # Ignore everything:
 /*
 !/.github/
+!/acf-json/*
 !/assets/
 /assets/*
 !/assets/css/
