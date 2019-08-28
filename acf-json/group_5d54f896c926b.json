@@ -1,0 +1,219 @@
+{
+    "key": "group_5d54f896c926b",
+    "title": "Block Calls to Action",
+    "fields": [
+        {
+            "key": "field_5d50131de3892",
+            "label": "Heading Text",
+            "name": "block_cta_heading_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Modify Heading Text",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d50d483ff485",
+            "label": "Button Text",
+            "name": "block_cta_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Click Me",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d501344e3893",
+            "label": "Heading Text Color",
+            "name": "block_heading_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5d50138be3895",
+            "label": "Button Text Color",
+            "name": "block_cta_button_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF"
+        },
+        {
+            "key": "field_5d55838422fcc",
+            "label": "Heading Text Size",
+            "name": "block_cta_heading_text_size",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 26,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": 20,
+            "max": 100,
+            "step": ""
+        },
+        {
+            "key": "field_5d50d6daad9b2",
+            "label": "Button Link",
+            "name": "block_cta_button_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d50135ee3894",
+            "label": "Button Background Color",
+            "name": "block_cta_button_bg_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#9B5CB5"
+        },
+        {
+            "key": "field_5d5012c4e3890",
+            "label": "Background Color",
+            "name": "block_cta_background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ccc"
+        },
+        {
+            "key": "field_5d5012f4e3891",
+            "label": "Background Image",
+            "name": "block_cta_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d5013a2e3896",
+            "label": "Align Button",
+            "name": "block_cta_align_button",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "Left",
+                "2": "Right"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": 2,
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/call-to-action"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "auto_block": 0,
+    "auto_block_key": "",
+    "auto_block_description": "",
+    "auto_block_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"\/><path d=\"M6.5 10h-2v7h2v-7zm6 0h-2v7h2v-7zm8.5 9H2v2h19v-2zm-2.5-9h-2v7h2v-7zm-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5z\"\/><\/svg>",
+    "auto_block_post_types": [
+        "post",
+        "page",
+        "wp_block"
+    ],
+    "auto_block_multiple": 0,
+    "auto_block_reusable": 0,
+    "auto_block_align": "",
+    "modified": 1565885391
+}

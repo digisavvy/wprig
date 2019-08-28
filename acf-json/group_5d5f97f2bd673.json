@@ -1,0 +1,66 @@
+{
+    "key": "group_5d5f97f2bd673",
+    "title": "Extra Post Options",
+    "fields": [
+        {
+            "key": "field_5d5f97fe756a1",
+            "label": "Remove Title",
+            "name": "dgs_remove_title",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "auto_block": 0,
+    "auto_block_key": "",
+    "auto_block_description": "",
+    "auto_block_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"\/><path d=\"M6.5 10h-2v7h2v-7zm6 0h-2v7h2v-7zm8.5 9H2v2h19v-2zm-2.5-9h-2v7h2v-7zm-7-6.74L16.71 6H6.29l5.21-2.74m0-2.26L2 6v2h19V6l-9.5-5z\"\/><\/svg>",
+    "auto_block_post_types": [
+        "post",
+        "page",
+        "wp_block"
+    ],
+    "auto_block_multiple": 0,
+    "auto_block_reusable": 0,
+    "auto_block_align": "",
+    "modified": 1566546046
+}
