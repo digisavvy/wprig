@@ -11,6 +11,8 @@ $post_type_obj = get_post_type_object( get_post_type() );
 
 $time_string = '';
 
+$hide_title = get_field( 'dgs_remove_title' );
+
 // Show date only when the post type is 'post' or has an archive.
 if ( 'post' === $post_type_obj->name || $post_type_obj->has_archive ) {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -52,59 +54,66 @@ if ( ! empty( $post->post_parent ) && 'attachment' === get_post_type() ) {
 }
 
 ?>
-<div class="entry-meta">
-	<?php
-	if ( ! empty( $time_string ) ) {
-		?>
-		<span class="posted-on">
-			<?php
-			printf(
-				/* translators: %s: post date */
-				esc_html_x( 'Posted on %s', 'post date', 'wp-rig' ),
-				$time_string // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			);
-			?>
-		</span>
-		<?php
-	}
 
-	if ( ! empty( $author_string ) ) {
-		?>
-		<span class="posted-by">
-			<?php
-			/* translators: %s: post author */
-			$author_byline = _x( 'By %s', 'post author', 'wp-rig' );
-			if ( ! empty( $time_string ) ) {
-				/* translators: %s: post author */
-				$author_byline = _x( 'by %s', 'post author', 'wp-rig' );
-			}
-			printf(
-				esc_html( $author_byline ),
-				$author_string // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			);
-			?>
-		</span>
-		<?php
-	}
-
-	if ( ! empty( $parent_string ) ) {
-		?>
-		<span class="posted-in">
-			<?php
-			/* translators: %s: post parent title */
-			$parent_note = _x( 'In %s', 'post parent', 'wp-rig' );
-			if ( ! empty( $time_string ) || ! empty( $author_string ) ) {
-				/* translators: %s: post parent title */
-				$parent_note = _x( 'in %s', 'post parent', 'wp-rig' );
-			}
-			printf(
-				esc_html( $parent_note ),
-				$parent_string // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			);
-			?>
-		</span>
-		<?php
-	}
-	?>
-</div><!-- .entry-meta -->
 <?php
+if ( empty( $hide_title ) ) {
+	?>
+	<div class="entry-meta">
+		<?php
+		if ( ! empty( $time_string ) ) {
+			?>
+			<span class="posted-on">
+				<?php
+				printf(
+					/* translators: %s: post date */
+					esc_html_x( 'Posted on %s', 'post date', 'wp-rig' ),
+					$time_string // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				);
+				?>
+			</span>
+			<?php
+		}
+
+		if ( ! empty( $author_string ) ) {
+			?>
+			<span class="posted-by">
+				<?php
+				/* translators: %s: post author */
+				$author_byline = _x( 'By %s', 'post author', 'wp-rig' );
+				if ( ! empty( $time_string ) ) {
+					/* translators: %s: post author */
+					$author_byline = _x( 'by %s', 'post author', 'wp-rig' );
+				}
+				printf(
+					esc_html( $author_byline ),
+					$author_string // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				);
+				?>
+			</span>
+			<?php
+		}
+
+		if ( ! empty( $parent_string ) ) {
+			?>
+			<span class="posted-in">
+				<?php
+				/* translators: %s: post parent title */
+				$parent_note = _x( 'In %s', 'post parent', 'wp-rig' );
+				if ( ! empty( $time_string ) || ! empty( $author_string ) ) {
+					/* translators: %s: post parent title */
+					$parent_note = _x( 'in %s', 'post parent', 'wp-rig' );
+				}
+				printf(
+					esc_html( $parent_note ),
+					$parent_string // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				);
+				?>
+			</span>
+			<?php
+		}
+		?>
+	</div><!-- .entry-meta -->
+	<?php
+}
+
+
